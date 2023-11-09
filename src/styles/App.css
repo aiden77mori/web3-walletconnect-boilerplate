@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+.App {
+  text-align: center;
+}
+
+.connector-button:hover {
+  box-shadow: 0px 0px 7px 7px rgba(30, 136, 229, 0.2) !important;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* ANTD OVERRIDE */
+
+.ant-btn-primary {
+  background-color: black !important;
+  border: 1px solid rgba(152, 161, 192, 0.24) !important;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.ant-btn:hover {
+  box-shadow: 0px 0px 12px 12px rgba(30, 136, 229, 0.2);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.ant-dropdown {
+  border-radius: 10px !important;
+}
+
+.ant-dropdown-menu {
+  border-radius: 10px !important;
+}
+
+.ant-dropdown-menu-item,
+.ant-dropdown-menu-submenu-title {
+  height: 42px;
+  gap: 5px;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+}
+
+.ant-modal {
+  display: flex;
+  width: 70vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.ant-modal-content {
+  border-radius: 10px;
+  min-width: 350px;
+  margin-inline: auto;
+}
+
+.ant-modal-mask {
+  z-index: 40 !important;
+}
+
+.ant-modal-wrap {
+  z-index: 50 !important;
+}
